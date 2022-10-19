@@ -10,6 +10,7 @@ namespace HackerNewsLibrary
     {
         public List<Comment> Comments = new List<Comment>();
 
+
         public User Username { get; set; }
         public string Title { get; set; }
         public string Link { get; set; }
