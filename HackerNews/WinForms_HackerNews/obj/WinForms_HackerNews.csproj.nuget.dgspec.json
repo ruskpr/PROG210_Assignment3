@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\russ\\PROG210_Assignment3\\HackerNews\\WinForms_HackerNews\\WinForms_HackerNews.csproj": {}
+    "C:\\Users\\ronald.major\\Source\\Repos\\PROG210_Assignment3\\HackerNews\\WinForms_HackerNews\\WinForms_HackerNews.csproj": {}
   },
   "projects": {
-    "E:\\russ\\PROG210_Assignment3\\HackerNews\\WinForms_HackerNews\\WinForms_HackerNews.csproj": {
+    "C:\\Users\\ronald.major\\Source\\Repos\\PROG210_Assignment3\\HackerNews\\WinForms_HackerNews\\WinForms_HackerNews.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\russ\\PROG210_Assignment3\\HackerNews\\WinForms_HackerNews\\WinForms_HackerNews.csproj",
+        "projectUniqueName": "C:\\Users\\ronald.major\\Source\\Repos\\PROG210_Assignment3\\HackerNews\\WinForms_HackerNews\\WinForms_HackerNews.csproj",
         "projectName": "WinForms_HackerNews",
-        "projectPath": "E:\\russ\\PROG210_Assignment3\\HackerNews\\WinForms_HackerNews\\WinForms_HackerNews.csproj",
-        "packagesPath": "C:\\Users\\rustu.koprulu\\.nuget\\packages\\",
-        "outputPath": "E:\\russ\\PROG210_Assignment3\\HackerNews\\WinForms_HackerNews\\obj\\",
+        "projectPath": "C:\\Users\\ronald.major\\Source\\Repos\\PROG210_Assignment3\\HackerNews\\WinForms_HackerNews\\WinForms_HackerNews.csproj",
+        "packagesPath": "C:\\Users\\ronald.major\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ronald.major\\Source\\Repos\\PROG210_Assignment3\\HackerNews\\WinForms_HackerNews\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\rustu.koprulu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ronald.major\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
