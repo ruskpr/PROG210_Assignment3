@@ -31,10 +31,11 @@ namespace HackerNewsLibrary
         }
         #endregion
 
+        #region Methods
         public void UpVote() => UpVotes++;
 
         public override string ToString() =>
             $"{Username}'s thread";
-        
+        #endregion
     }
 }
