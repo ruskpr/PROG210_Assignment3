@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,11 +15,15 @@ namespace WinForms_HackerNews
 {
     public partial class ThreadBox : UserControl
     {
-        public static Bitmap? upVoteImg = new Bitmap("upvote.png");
-
+        #region Fields
+        public static Bitmap? upVoteImg;
         public static List<ThreadBox> Boxes = new List<ThreadBox>();
+        private int _index;
+        #endregion
+        #region Properties
         public Thread TheThread { get; set; }
-        public int Index { get; set; }
+        #endregion
+        #region Constructor 
         public ThreadBox(Thread thread)
         {
             InitializeComponent();
@@ -27,16 +32,17 @@ namespace WinForms_HackerNews
             lbTitle.Click += LbTitle_Click;
             lbDetails.Click += LbDetails_Click;
 
-            //set upvote image
-            upVoteImg ??= null;
+
+            //init upvote image
+            upVoteImg = File.Exists("upvote.png") ? new Bitmap("upvote.png") : null;
             btnUpvote.Image = upVoteImg;
 
-
             TheThread = thread;
-            this.Index = Boxes.Count + 1;
+            _index = Boxes.Count + 1; // get index of thread based on current count of static list
+
             UpdateThreadBox();
         }
-
+        #endregion
         #region Click events
         private void LbDetails_Click(object? sender, EventArgs e) =>
             MessageBox.Show("[Go to comments]");
@@ -51,15 +57,18 @@ namespace WinForms_HackerNews
             UpdateThreadBox();
         }
         #endregion
-
         #region Methods
         public void UpdateThreadBox()
         {
-            lbIndex.Text = $"{Index}.";
+            lbIndex.Text = $"{_index}.";
             lbTitle.Text = TheThread.Title;
             lbDetails.Text = $"{TheThread.UpVotes} points by {TheThread.Username} on " +
                 $"{TheThread.DateCreated} | {TheThread.Comments.Count} comments";
         }
+
+        public override string ToString() => $"{TheThread.Username}'s Thread Box";
+
         #endregion
+
     }
 }
