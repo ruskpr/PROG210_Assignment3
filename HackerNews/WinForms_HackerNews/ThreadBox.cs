@@ -14,7 +14,7 @@ namespace WinForms_HackerNews
 {
     public partial class ThreadBox : UserControl
     {
-        public static Bitmap upVoteImg = new Bitmap("upvote.png");
+        public static Bitmap? upVoteImg = new Bitmap("upvote.png");
 
         public static List<ThreadBox> Boxes = new List<ThreadBox>();
         public Thread TheThread { get; set; }
@@ -28,6 +28,7 @@ namespace WinForms_HackerNews
             lbDetails.Click += LbDetails_Click;
 
             //set upvote image
+            upVoteImg ??= null;
             btnUpvote.Image = upVoteImg;
 
 
