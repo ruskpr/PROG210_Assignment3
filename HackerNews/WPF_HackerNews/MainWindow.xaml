@@ -1,12 +1,37 @@
-﻿<Window x:Class="WPF_HackerNews.MainWindow"
+﻿<Window x:Name="SortByNew" x:Class="WPF_HackerNews.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_HackerNews"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Background="#FFF5F9D3">
+
     <Grid>
 
+        <StackPanel x:Name="stpContainer" Margin="0,23,0,0"/>
+        <StackPanel x:Name="stpNav" Margin="0,0,0,389" Background="#FFEA561E">
+        </StackPanel>
+        <Label x:Name="lblSiteTitle" FontWeight="Bold" Content="Hacker News" HorizontalAlignment="Left" Margin="7,10,0,0" VerticalAlignment="Top" BorderBrush="#FF020000"/>
+        <Label x:Name="lbP1" Content="|" HorizontalAlignment="Left" Margin="164,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblwelcome" Content="welcome" HorizontalAlignment="Left" Margin="102,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblpast" Content="past" HorizontalAlignment="Left" Margin="293,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblcomments" Content="comments" HorizontalAlignment="Left" Margin="337,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblask" Content="ask" HorizontalAlignment="Left" Margin="422,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblshow" Content="show" HorizontalAlignment="Left" Margin="462,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbljobs" Content="jobs" HorizontalAlignment="Left" Margin="514,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblsubmit" Content="submit" HorizontalAlignment="Left" Margin="560,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbP2" Content="|" HorizontalAlignment="Left" Margin="325,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbP3" Content="|" HorizontalAlignment="Left" Margin="407,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbP4" Content="|" HorizontalAlignment="Left" Margin="449,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbP5" Content="|" HorizontalAlignment="Left" Margin="500,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbP6" Content="|" HorizontalAlignment="Left" Margin="547,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblnew_Copy" Content="new" HorizontalAlignment="Left" Margin="177,10,0,0" VerticalAlignment="Top" MouseDown="lblnew_Copy_MouseDown"/>
+        <Label x:Name="lbP1_Copy" Content="|" HorizontalAlignment="Left" Margin="209,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbP" Content="|" HorizontalAlignment="Left" Margin="275,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblthreads" Content="threads" HorizontalAlignment="Left" Margin="225,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblusername" Content="[username]" HorizontalAlignment="Left" Margin="675,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbllogout" Content="logout" HorizontalAlignment="Left" Margin="755,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbP6_Copy" Content="|" HorizontalAlignment="Left" Margin="744,10,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

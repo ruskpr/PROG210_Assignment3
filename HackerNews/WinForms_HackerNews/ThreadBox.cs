@@ -33,9 +33,12 @@ namespace WinForms_HackerNews
             lbDetails.Click += LbDetails_Click;
 
 
-            //init upvote image
+            //check if image file exists 
             upVoteImg = File.Exists("upvote.png") ? new Bitmap("upvote.png") : null;
+            //set image to button
             btnUpvote.Image = upVoteImg;
+            // if there is no image make background solid color
+            btnUpvote.BackColor = btnUpvote.Image == null ? Color.Gray : Color.Transparent;
 
             TheThread = thread;
             _index = Boxes.Count + 1; // get index of thread based on current count of static list
