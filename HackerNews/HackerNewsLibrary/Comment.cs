@@ -14,9 +14,10 @@ namespace HackerNewsLibrary
         public DateTime DateCreated { get; }
         public int UpVotes { get; set; }
 
-        public Comment(Thread parentThread, string content)
+        public Comment(Thread parentThread, User author, string content)
         {
             ParentThread = parentThread;
+            Author = author;    
             Content = content;
             DateCreated = DateTime.Now;
             UpVotes = 0;
