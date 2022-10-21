@@ -8,5 +8,23 @@ namespace HackerNewsLibrary
 {
     public class Comment
     {
+        public Thread ParentThread { get; set; }
+        public User Author { get; set; }
+        public string Content { get; set; }
+        public DateTime DateCreated { get; }
+        public int UpVotes { get; set; }
+
+        public Comment(Thread parentThread, string content)
+        {
+            ParentThread = parentThread;
+            Content = content;
+            DateCreated = DateTime.Now;
+            UpVotes = 0;
+        }   
+
+        public void UpVote() => UpVotes++;
+
+        public override string ToString() =>
+            $"{Author}'s comment on {ParentThread}";
     }
 }
