@@ -14,6 +14,7 @@ namespace HackerNewsLibrary
         public User Username { get; set; }
         public string Title { get; set; }
         public string Link { get; set; }
+        public int UpVotes { get; set; }
         public string Description { get; set; }
         public DateTime DateCreated { get; }
         #endregion
@@ -26,8 +27,11 @@ namespace HackerNewsLibrary
             Link = link;
             Description = desc;
             DateCreated = DateTime.Now;
+            UpVotes = 0;
         }
         #endregion
+
+        public void UpVote() => UpVotes++;
 
         public override string ToString() =>
             $"{Username}'s thread";
