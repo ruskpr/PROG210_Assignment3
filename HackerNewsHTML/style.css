@@ -10,10 +10,19 @@ body{
     overflow: hidden;
 }
 .container {
-    border: black;
+    border: black 2px solid;
     background-color: white;
-    width: 100%;
+    width: 90%;
     height: 100vh; 
+}
+
+.navcontainer {
+    background-color: #ff6600;
+}
+.navcontainer li {
+    display: inline;
+    text-decoration: none;
+    
 }
 h2{
     font-family: 'Courier New', Courier, monospace;
