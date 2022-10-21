@@ -28,12 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.flowContainer = new System.Windows.Forms.FlowLayoutPanel();
+            this.SuspendLayout();
+            // 
+            // flowContainer
+            // 
+            this.flowContainer.AutoScroll = true;
+            this.flowContainer.BackColor = System.Drawing.Color.Gainsboro;
+            this.flowContainer.Location = new System.Drawing.Point(12, 32);
+            this.flowContainer.Name = "flowContainer";
+            this.flowContainer.Size = new System.Drawing.Size(848, 441);
+            this.flowContainer.TabIndex = 0;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(1061, 696);
+            this.Controls.Add(this.flowContainer);
+            this.Name = "Form1";
+            this.ShowIcon = false;
+            this.Text = "Hacker News";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private FlowLayoutPanel flowContainer;
     }
 }

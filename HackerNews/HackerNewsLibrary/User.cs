@@ -14,6 +14,8 @@ namespace HackerNewsLibrary
         public string Email { get; set; }
         public string About { get; set; }
         public DateTime DateCreated { get; set; }
+        public List<Thread> CreatedThreads { get; set; }
+        public List<Comment> CreatedComments { get; set; }
         #endregion
 
         #region Constructor
@@ -60,6 +62,9 @@ namespace HackerNewsLibrary
             //CreateSubmission with unique metadata for Question?
         }
 
+        public override string ToString() =>
+            $"{UserName}";
+        
         #endregion
     }
 }

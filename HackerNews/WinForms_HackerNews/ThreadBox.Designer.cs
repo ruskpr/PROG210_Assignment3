@@ -49,6 +49,7 @@
             // lbTitle
             // 
             this.lbTitle.AutoSize = true;
+            this.lbTitle.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbTitle.ForeColor = System.Drawing.Color.Black;
             this.lbTitle.Location = new System.Drawing.Point(70, 12);
@@ -60,6 +61,7 @@
             // lbDetails
             // 
             this.lbDetails.AutoSize = true;
+            this.lbDetails.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbDetails.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbDetails.ForeColor = System.Drawing.Color.DimGray;
             this.lbDetails.Location = new System.Drawing.Point(70, 38);
@@ -70,10 +72,12 @@
             // 
             // btnUpvote
             // 
-            this.btnUpvote.BackColor = System.Drawing.Color.Black;
-            this.btnUpvote.Location = new System.Drawing.Point(34, 22);
+            this.btnUpvote.BackColor = System.Drawing.Color.Transparent;
+            this.btnUpvote.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUpvote.Location = new System.Drawing.Point(37, 24);
             this.btnUpvote.Name = "btnUpvote";
-            this.btnUpvote.Size = new System.Drawing.Size(30, 30);
+            this.btnUpvote.Size = new System.Drawing.Size(20, 20);
+            this.btnUpvote.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnUpvote.TabIndex = 3;
             this.btnUpvote.TabStop = false;
             // 
