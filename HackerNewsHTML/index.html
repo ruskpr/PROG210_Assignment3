@@ -14,18 +14,30 @@
         
     <div class="container">
         <div class="navcontainer">
-            <nav>
-                <li><a href="#">Hacker News</a></li> |
-                <li><a href="#">new</a></li> |
-                <li><a href="#">threads</a></li> |
-                <li><a href="#">past</a></li> |
-                <li><a href="#">comments</a></li> |
-                <li><a href="#">ask</a></li> |
-                <li><a href="#">show</a></li> |
-                <li><a href="#">jobs</a></li> |
-                <li><a href="#">submit</a></li> 
-            </nav>
+            <div class="leftnav">
+                <li id="homelink"><a href="#">Hacker News</a></li> |
+                <li><a href="#" onclick = "RefreshPage()">new</a></li> |
+                <li><a href="#" onclick = "RefreshPage()">threads</a></li> |
+                <li><a href="#" onclick = "RefreshPage()">past</a></li> |
+                <li><a href="#" onclick = "RefreshPage()">comments</a></li> |
+                <li><a href="#" onclick = "RefreshPage()">ask</a></li> |
+                <li><a href="#" onclick = "RefreshPage()">show</a></li> |
+                <li><a href="#" onclick = "RefreshPage()">jobs</a></li> |
+                <li><a href="#" onclick = "RefreshPage()">submit</a></li> 
+            </div>
+            <div class="rightnav">
+                <li><a href="#">[username]</a></li> |
+                <li><a href="#">logout</a></li> 
+            </div>
+
+        </div>
+        <!-- thread container -->
+        <div class="threadcontainer" id="threadcontainer">
+            <!-- threadboxes go here -->
+            
+            </div>
         </div>
     </div>
     </body>
+    <script src="test.js"></script>
 </html>
