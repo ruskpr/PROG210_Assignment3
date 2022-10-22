@@ -8,10 +8,13 @@ namespace WinForms_HackerNews
         public static List<User> users = new List<User>();
         public static List<Thread> threads = new List<Thread>();
 
+        private NavBar nav;
 
         public Form1()
         {
             InitializeComponent();
+
+            nav = new NavBar(this);
 
             threads.AddRange(AddThreads());
 
@@ -43,6 +46,16 @@ namespace WinForms_HackerNews
             threads.Add(new Thread(users[0], "Global warming is a serious issue.", "https://www.youtube.com/", "lorem ipsum test."));
 
             return threads;
+        }
+
+        void UpdateNavBar()
+        {
+            nav.Width = this.Width;
+        }
+
+        private void Form1_SizeChanged(object sender, EventArgs e)
+        {
+            UpdateNavBar();
         }
     }
 }
