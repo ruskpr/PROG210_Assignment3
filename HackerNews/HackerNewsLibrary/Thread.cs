@@ -17,6 +17,7 @@ namespace HackerNewsLibrary
         public int UpVotes { get; set; }
         public string Description { get; set; }
         public DateTime DateCreated { get; }
+        public int CommentCount { get; set; }
         #endregion
 
         #region Constructor
@@ -27,7 +28,10 @@ namespace HackerNewsLibrary
             Link = link;
             Description = desc;
             DateCreated = DateTime.Now;
-            UpVotes = 0;
+            // UpVotes = 0;
+            UpVotes = new Random().Next(0,150);
+            // CommentCount = 0;
+            CommentCount = new Random().Next(0,150);
         }
         #endregion
 

@@ -19,6 +19,7 @@ namespace WinForms_HackerNews
         public static Bitmap? upVoteImg;
         public static List<ThreadBox> Boxes = new List<ThreadBox>();
         private int _index;
+        private Random rnd = new Random();
         #endregion
         #region Properties
         public Thread TheThread { get; set; }
@@ -63,7 +64,7 @@ namespace WinForms_HackerNews
             lbIndex.Text = $"{_index}.";
             lbTitle.Text = TheThread.Title;
             lbDetails.Text = $"{TheThread.UpVotes} points by {TheThread.Username} on " +
-                $"{TheThread.DateCreated} | {TheThread.Comments.Count} comments";
+                $"{TheThread.DateCreated} | {TheThread.CommentCount} comments"; 
         }
 
         public override string ToString() => $"{TheThread.Username}'s Thread Box";

@@ -12,6 +12,9 @@ namespace WinForms_HackerNews
 {
     public partial class NavBar : UserControl
     {
+        public delegate void delNavbarClick();
+        public event delNavbarClick NavbarClick;
+
         public NavBar(Form pntr)
         {
             InitializeComponent();
@@ -19,6 +22,17 @@ namespace WinForms_HackerNews
             this.Width = pntr.Width;
 
             pntr.Controls.Add(this);
+
+            foreach(Control c in this.Controls.OfType<Label>())
+            {
+                c.Click += Control_Click;
+                c.Cursor = Cursors.Hand;
+            }
+        }
+
+        private void Control_Click(object? sender, EventArgs e)
+        {
+            NavbarClick.Invoke();
         }
     }
 }

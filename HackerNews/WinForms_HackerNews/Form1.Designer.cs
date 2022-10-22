@@ -36,7 +36,7 @@
             // 
             this.flowContainer.AutoScroll = true;
             this.flowContainer.BackColor = System.Drawing.Color.Gainsboro;
-            this.flowContainer.Location = new System.Drawing.Point(12, 43);
+            this.flowContainer.Location = new System.Drawing.Point(0, 33);
             this.flowContainer.Name = "flowContainer";
             this.flowContainer.Size = new System.Drawing.Size(848, 441);
             this.flowContainer.TabIndex = 0;
