@@ -33,6 +33,7 @@ function generateThreads(amount) {
     }
 }
 
+//create 30 threads when window loads
 window.onload = generateThreads(30)
 //create thread box and add it to html container
 function createThreadBox() {
@@ -74,12 +75,6 @@ function createThreadBox() {
 
     //add right content
     threadbox.appendChild(rightcontent)
-
-
-    const element = document.getElementById("threadcontainer");
-    element.appendChild(threadbox);
-    //create threadbox container
-     
 }
 
 // Thread object
