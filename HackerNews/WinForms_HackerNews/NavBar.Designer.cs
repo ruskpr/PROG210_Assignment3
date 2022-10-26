@@ -140,7 +140,7 @@
             // 
             this.lbLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbLogin.AutoSize = true;
-            this.lbLogin.Location = new System.Drawing.Point(880, 11);
+            this.lbLogin.Location = new System.Drawing.Point(1023, 11);
             this.lbLogin.Name = "lbLogin";
             this.lbLogin.Size = new System.Drawing.Size(42, 15);
             this.lbLogin.TabIndex = 2;
@@ -150,7 +150,7 @@
             // 
             this.lbUsername.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbUsername.AutoSize = true;
-            this.lbUsername.Location = new System.Drawing.Point(807, 11);
+            this.lbUsername.Location = new System.Drawing.Point(950, 11);
             this.lbUsername.Name = "lbUsername";
             this.lbUsername.Size = new System.Drawing.Size(67, 15);
             this.lbUsername.TabIndex = 2;
@@ -158,7 +158,8 @@
             // 
             // tbSearch
             // 
-            this.tbSearch.Location = new System.Drawing.Point(596, 7);
+            this.tbSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbSearch.Location = new System.Drawing.Point(682, 7);
             this.tbSearch.Name = "tbSearch";
             this.tbSearch.PlaceholderText = "Search...";
             this.tbSearch.Size = new System.Drawing.Size(138, 23);
@@ -166,7 +167,8 @@
             // 
             // btnSeacrh
             // 
-            this.btnSeacrh.Location = new System.Drawing.Point(740, 7);
+            this.btnSeacrh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSeacrh.Location = new System.Drawing.Point(826, 7);
             this.btnSeacrh.Name = "btnSeacrh";
             this.btnSeacrh.Size = new System.Drawing.Size(75, 23);
             this.btnSeacrh.TabIndex = 6;
@@ -193,7 +195,7 @@
             this.Controls.Add(this.lbWelcome);
             this.Controls.Add(this.lbTitle);
             this.Name = "NavBar";
-            this.Size = new System.Drawing.Size(940, 36);
+            this.Size = new System.Drawing.Size(1083, 36);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -18,7 +18,7 @@ namespace WinForms_HackerNews
         public Form1()
         {
             InitializeComponent();
-            this.MinimumSize = new Size(750, 300);
+            this.MinimumSize = new Size(950, 400);
             flowContainer.Left = 0;
             flowContainer.Top = 36;
             UpdateContainer();
