@@ -26,6 +26,9 @@ const titleList = [
 
 let index = 1;
 
+
+
+
 function generateThreads(amount) {
     for (let i = 1; i < amount; i++) {
         createThreadBox()
@@ -34,7 +37,8 @@ function generateThreads(amount) {
 }
 
 //create 30 threads when window loads
-window.onload = generateThreads(30)
+window.onload = generateThreads(30);
+
 //create thread box and add it to html container
 function createThreadBox() {
 
@@ -75,6 +79,11 @@ function createThreadBox() {
 
     //add right content
     threadbox.appendChild(rightcontent)
+
+    
+ 
+    container.appendChild(threadbox);
+    //create threadbox container
 }
 
 // Thread object
