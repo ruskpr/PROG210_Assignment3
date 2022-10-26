@@ -35,7 +35,7 @@ namespace WinForms_HackerNews
 
 
             //init upvote image
-            upVoteImg = File.Exists("upvote.png") ? new Bitmap("upvote.png") : null;
+            upVoteImg = File.Exists("assets/upvote.png") ? new Bitmap("assets/upvote.png") : null;
             btnUpvote.Image = upVoteImg;
             if (upVoteImg == null)
                 btnUpvote.BackColor = Color.Gray;
