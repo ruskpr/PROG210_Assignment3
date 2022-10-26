@@ -37,6 +37,8 @@ namespace WinForms_HackerNews
             //init upvote image
             upVoteImg = File.Exists("upvote.png") ? new Bitmap("upvote.png") : null;
             btnUpvote.Image = upVoteImg;
+            if (upVoteImg == null)
+                btnUpvote.BackColor = Color.Gray;
 
             TheThread = thread;
             _index = Boxes.Count + 1; // get index of thread based on current count of static list
