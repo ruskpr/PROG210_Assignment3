@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "WPF_HackerNews/1.0.0": {
+        "dependencies": {
+          "HackerNewsLibrary": "1.0.0"
+        },
+        "runtime": {
+          "WPF_HackerNews.dll": {}
+        }
+      },
+      "HackerNewsLibrary/1.0.0": {
+        "runtime": {
+          "HackerNewsLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WPF_HackerNews/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HackerNewsLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

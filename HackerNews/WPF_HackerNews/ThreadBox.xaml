@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="WPF_HackerNews.ThreadBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPF_HackerNews"
+             mc:Ignorable="d" 
+             d:DesignHeight="73" d:DesignWidth="800">
+    <Grid Margin="0,0,0,0" Background="LightGray" >
+
+        <!-- Upvote button (increment num of votes for thread on click -->
+        <Button x:Name="btnUpvote" 
+            Content="Button" 
+            HorizontalAlignment="Left" 
+            Margin="105,0,0,0" 
+            VerticalAlignment="Center"/>
+
+        <!-- Index (shows position of thread in the list -->
+        <Label x:Name="lbIndex" Content="1."
+            MouseDown="lbTitle_MouseDown"      
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Center" 
+            Margin="10,0,0,0" 
+            FontSize="18" 
+            Foreground="#FF5D4A4A"/>
+
+        <!--Title (Header of thread) -->
+        <Label MouseDown="lbTitle_MouseDown" 
+            x:Name="lbTitle" 
+            Content="Students are acing their homework by turning in machine-generated essays" 
+            HorizontalAlignment="Left" 
+            Margin="260,7,0,0" 
+            VerticalAlignment="Top" 
+            FontSize="18"/>
+        
+        <!--Details (num of points, author, date created, num of comments) -->
+        <Label MouseDown="lbDetails_MouseDown_1" 
+            x:Name="lbDetails" Content="5 points by [username] 2 hours ago | hide | 102 comments" 
+            HorizontalAlignment="Left" 
+            Margin="260,36,0,0" 
+            VerticalAlignment="Top" 
+            Foreground="#FF5D4A4A" 
+            FontSize="9.75"/>
+
+
+    </Grid>
+</UserControl>
