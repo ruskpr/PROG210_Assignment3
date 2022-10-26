@@ -40,6 +40,8 @@
             this.lbSumbit = new System.Windows.Forms.Label();
             this.lbLogin = new System.Windows.Forms.Label();
             this.lbUsername = new System.Windows.Forms.Label();
+            this.tbSearch = new System.Windows.Forms.TextBox();
+            this.btnSeacrh = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbTitle
@@ -154,11 +156,30 @@
             this.lbUsername.TabIndex = 2;
             this.lbUsername.Text = "[username]";
             // 
+            // tbSearch
+            // 
+            this.tbSearch.Location = new System.Drawing.Point(596, 7);
+            this.tbSearch.Name = "tbSearch";
+            this.tbSearch.PlaceholderText = "Search...";
+            this.tbSearch.Size = new System.Drawing.Size(138, 23);
+            this.tbSearch.TabIndex = 5;
+            // 
+            // btnSeacrh
+            // 
+            this.btnSeacrh.Location = new System.Drawing.Point(740, 7);
+            this.btnSeacrh.Name = "btnSeacrh";
+            this.btnSeacrh.Size = new System.Drawing.Size(75, 23);
+            this.btnSeacrh.TabIndex = 6;
+            this.btnSeacrh.Text = "Search";
+            this.btnSeacrh.UseVisualStyleBackColor = true;
+            // 
             // NavBar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(86)))), ((int)(((byte)(30)))));
+            this.Controls.Add(this.btnSeacrh);
+            this.Controls.Add(this.tbSearch);
             this.Controls.Add(this.lbComments);
             this.Controls.Add(this.lbPast);
             this.Controls.Add(this.lbUsername);
@@ -192,5 +213,7 @@
         private Label lbSumbit;
         private Label lbLogin;
         private Label lbUsername;
+        private TextBox tbSearch;
+        private Button btnSeacrh;
     }
 }

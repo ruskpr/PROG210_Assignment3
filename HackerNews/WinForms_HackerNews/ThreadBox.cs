@@ -18,10 +18,10 @@ namespace WinForms_HackerNews
         #region Fields
         public static Bitmap? upVoteImg;
         public static List<ThreadBox> Boxes = new List<ThreadBox>();
-        private int _index;
         private Random rnd = new Random();
         #endregion
         #region Properties
+        public int Index { get; set; }
         public Thread TheThread { get; set; }
         #endregion
         #region Constructor 
@@ -41,7 +41,7 @@ namespace WinForms_HackerNews
                 btnUpvote.BackColor = Color.Gray;
 
             TheThread = thread;
-            _index = Boxes.Count + 1; // get index of thread based on current count of static list
+            Index = Boxes.Count + 1; // get index of thread based on current count of static list
 
             UpdateThreadBox();
         }
@@ -63,7 +63,7 @@ namespace WinForms_HackerNews
         #region Methods
         public void UpdateThreadBox()
         {
-            lbIndex.Text = $"{_index}.";
+            lbIndex.Text = $"{Index}.";
             lbTitle.Text = TheThread.Title;
             lbDetails.Text = $"{TheThread.UpVotes} points by {TheThread.Username} on " +
                 $"{TheThread.DateCreated} | {TheThread.CommentCount} comments"; 

@@ -15,9 +15,15 @@ namespace WinForms_HackerNews
         public delegate void delNavbarClick();
         public event delNavbarClick NavbarClick;
 
+        public delegate void delSendSeach(string searchText);
+        public event delSendSeach SendSearch;
+
+
+
         public NavBar(Form pntr)
         {
             InitializeComponent();
+            this.btnSeacrh.MouseDown += BtnSeacrh_MouseDown;
 
             this.Width = pntr.Width;
 
@@ -28,6 +34,11 @@ namespace WinForms_HackerNews
                 c.Click += Control_Click;
                 c.Cursor = Cursors.Hand;
             }
+        }
+
+        private void BtnSeacrh_MouseDown(object? sender, MouseEventArgs e)
+        {
+            SendSearch.Invoke(tbSearch.Text);
         }
 
         private void Control_Click(object? sender, EventArgs e)
