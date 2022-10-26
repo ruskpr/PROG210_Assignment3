@@ -8,11 +8,12 @@
         Title="MainWindow" Height="450" Width="800" Background="#FFF5F9D3">
 
     <Grid>
-
-        <StackPanel x:Name="stpContainer" Margin="0,50,0,0"/>
+        <ScrollViewer>
+            <StackPanel x:Name="stpContainer" Margin="0,50,0,0"/>
+        </ScrollViewer>
         <StackPanel x:Name="stpNav" Margin="0,0,0,360" Background="#FFEA561E">
-            
-            
+
+
         </StackPanel>
         <Label x:Name="lblSiteTitle" FontWeight="Bold" Content="Hacker News" HorizontalAlignment="Left" Margin="7,10,0,0" VerticalAlignment="Top" BorderBrush="#FF020000"/>
         <Label x:Name="lbP1" Content="|" HorizontalAlignment="Left" Margin="164,10,0,0" VerticalAlignment="Top"/>
@@ -32,8 +33,8 @@
         <Label x:Name="lbP1_Copy" Content="|" HorizontalAlignment="Left" Margin="209,10,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lbP" Content="|" HorizontalAlignment="Left" Margin="275,10,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblthreads" Content="threads" HorizontalAlignment="Left" Margin="225,10,0,0" VerticalAlignment="Top" MouseDown="lblthreads_MouseDown"/>
-        <Label x:Name="lblusername" Content="[username]" HorizontalAlignment="Left" Margin="675,10,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lbllogout" Content="logout" HorizontalAlignment="Left" Margin="755,10,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lbP6_Copy" Content="|" HorizontalAlignment="Left" Margin="744,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblusername" Content="[username]" HorizontalAlignment="Left" Margin="654,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbllogout" Content="logout" HorizontalAlignment="Left" Margin="734,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbP6_Copy" Content="|" HorizontalAlignment="Left" Margin="723,10,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
