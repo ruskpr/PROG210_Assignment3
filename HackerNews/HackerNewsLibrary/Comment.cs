@@ -8,12 +8,15 @@ namespace HackerNewsLibrary
 {
     public class Comment
     {
+        #region Properties
         public Thread ParentThread { get; set; }
         public User Author { get; set; }
         public string Content { get; set; }
         public DateTime DateCreated { get; }
         public int UpVotes { get; set; }
+        #endregion
 
+        #region Constructor
         public Comment(Thread parentThread, User author, string content)
         {
             ParentThread = parentThread;
@@ -21,11 +24,14 @@ namespace HackerNewsLibrary
             Content = content;
             DateCreated = DateTime.Now;
             UpVotes = 0;
-        }   
+        }
+        #endregion
 
+        #region Methods
         public void UpVote() => UpVotes++;
 
         public override string ToString() =>
             $"{Author}'s comment on {ParentThread}";
+        #endregion
     }
 }
