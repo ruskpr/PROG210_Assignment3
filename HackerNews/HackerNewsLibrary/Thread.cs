@@ -28,9 +28,9 @@ namespace HackerNewsLibrary
             Link = link;
             Description = desc;
             DateCreated = DateTime.Now;
-            // UpVotes = 0;
+            // UpVotes = 0; (in deployment)
             UpVotes = new Random().Next(0,150);
-            // CommentCount = 0;
+            // CommentCount = 0; (in deployment)
             CommentCount = new Random().Next(0,150);
         }
         #endregion
@@ -38,8 +38,8 @@ namespace HackerNewsLibrary
         #region Methods
         public void UpVote() => UpVotes++;
 
-        public override string ToString() =>
-            $"{Username}'s thread";
+        public override string ToString() => $"{Username}'s thread";
+
         #endregion
     }
 }
