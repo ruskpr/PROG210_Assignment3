@@ -67,7 +67,17 @@ namespace WPF_HackerNews
 
         private void lblnew_Copy_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            //sort by new
+        }
 
+        private void lblpast_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+          //sort by old
+        }
+
+        private void lblthreads_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            //search page
         }
     }
 }

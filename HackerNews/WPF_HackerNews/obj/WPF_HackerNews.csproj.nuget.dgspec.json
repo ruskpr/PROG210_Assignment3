@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ronald.major\\Source\\Repos\\PROG210_Assignment3\\HackerNews\\WPF_HackerNews\\WPF_HackerNews.csproj": {}
+    "C:\\Users\\ronald.major\\source\\repos\\PROG210_Assignment3\\HackerNews\\WPF_HackerNews\\WPF_HackerNews.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ronald.major\\Source\\Repos\\PROG210_Assignment3\\HackerNews\\HackerNewsLibrary\\HackerNewsLibrary.csproj": {
+    "C:\\Users\\ronald.major\\source\\repos\\PROG210_Assignment3\\HackerNews\\HackerNewsLibrary\\HackerNewsLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ronald.major\\Source\\Repos\\PROG210_Assignment3\\HackerNews\\HackerNewsLibrary\\HackerNewsLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\ronald.major\\source\\repos\\PROG210_Assignment3\\HackerNews\\HackerNewsLibrary\\HackerNewsLibrary.csproj",
         "projectName": "HackerNewsLibrary",
-        "projectPath": "C:\\Users\\ronald.major\\Source\\Repos\\PROG210_Assignment3\\HackerNews\\HackerNewsLibrary\\HackerNewsLibrary.csproj",
+        "projectPath": "C:\\Users\\ronald.major\\source\\repos\\PROG210_Assignment3\\HackerNews\\HackerNewsLibrary\\HackerNewsLibrary.csproj",
         "packagesPath": "C:\\Users\\ronald.major\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ronald.major\\Source\\Repos\\PROG210_Assignment3\\HackerNews\\HackerNewsLibrary\\obj\\",
+        "outputPath": "C:\\Users\\ronald.major\\source\\repos\\PROG210_Assignment3\\HackerNews\\HackerNewsLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -64,14 +64,14 @@
         }
       }
     },
-    "C:\\Users\\ronald.major\\Source\\Repos\\PROG210_Assignment3\\HackerNews\\WPF_HackerNews\\WPF_HackerNews.csproj": {
+    "C:\\Users\\ronald.major\\source\\repos\\PROG210_Assignment3\\HackerNews\\WPF_HackerNews\\WPF_HackerNews.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ronald.major\\Source\\Repos\\PROG210_Assignment3\\HackerNews\\WPF_HackerNews\\WPF_HackerNews.csproj",
+        "projectUniqueName": "C:\\Users\\ronald.major\\source\\repos\\PROG210_Assignment3\\HackerNews\\WPF_HackerNews\\WPF_HackerNews.csproj",
         "projectName": "WPF_HackerNews",
-        "projectPath": "C:\\Users\\ronald.major\\Source\\Repos\\PROG210_Assignment3\\HackerNews\\WPF_HackerNews\\WPF_HackerNews.csproj",
+        "projectPath": "C:\\Users\\ronald.major\\source\\repos\\PROG210_Assignment3\\HackerNews\\WPF_HackerNews\\WPF_HackerNews.csproj",
         "packagesPath": "C:\\Users\\ronald.major\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ronald.major\\Source\\Repos\\PROG210_Assignment3\\HackerNews\\WPF_HackerNews\\obj\\",
+        "outputPath": "C:\\Users\\ronald.major\\source\\repos\\PROG210_Assignment3\\HackerNews\\WPF_HackerNews\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -93,8 +93,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\ronald.major\\Source\\Repos\\PROG210_Assignment3\\HackerNews\\HackerNewsLibrary\\HackerNewsLibrary.csproj": {
-                "projectPath": "C:\\Users\\ronald.major\\Source\\Repos\\PROG210_Assignment3\\HackerNews\\HackerNewsLibrary\\HackerNewsLibrary.csproj"
+              "C:\\Users\\ronald.major\\source\\repos\\PROG210_Assignment3\\HackerNews\\HackerNewsLibrary\\HackerNewsLibrary.csproj": {
+                "projectPath": "C:\\Users\\ronald.major\\source\\repos\\PROG210_Assignment3\\HackerNews\\HackerNewsLibrary\\HackerNewsLibrary.csproj"
               }
             }
           }

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\ronald.major\Source\Repos\PROG210_Assignment3\HackerNews\WPF_HackerNews\obj\Debug\net6.0-windows\
+C:\Users\ronald.major\source\repos\PROG210_Assignment3\HackerNews\WPF_HackerNews\obj\Debug\net6.0-windows\
 WPF_HackerNews
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\ronald.major\Source\Repos\PROG210_Assignment3\HackerNews\WPF_HackerNews\App.xaml
+C:\Users\ronald.major\source\repos\PROG210_Assignment3\HackerNews\WPF_HackerNews\App.xaml
 2-581957278
 
 6-1136915177
-195-1321364652
+195-441500305
 MainWindow.xaml;ThreadBox.xaml;
 
-True
+False
 
